@@ -293,7 +293,7 @@ const CustomChart = () => {
               </G>
             );
           })}
-          {pieces.map((piece, index) => {
+          {/* {pieces.map((piece, index) => {
             return (
               <G>
                 <Line
@@ -308,7 +308,7 @@ const CustomChart = () => {
                 {renderLine(x, y, rotationDeg)}
               </G>
             );
-          })}
+          })} */}
         </Svg>
       </View>
     );

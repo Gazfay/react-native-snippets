@@ -23,8 +23,9 @@ import PieChart from './src/components/PieChart';
 import ProgressCircle from './src/components/ProgressCircle';
 import Swipe from './src/components/Swipe';
 import Victory from './src/components/VictoryNative';
-import Wheel from './src/components/Wheel';
-// import CustomChart from './src/components/CustomChart';
+import Wheel from './src/components/CalendarStrip';
+import CustomChart from './src/components/CustomChart';
+import CalendarStrip from './src/components/CalendarStrip';
 
 const App = () => {
   const isDarkMode = useColorScheme() === 'dark';
@@ -35,21 +36,21 @@ const App = () => {
   };
 
   return (
-    // <SafeAreaView style={backgroundStyle}>
-    //   <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
-    //   <GestureHandlerRootView style={{ flex: 1 }}>
-    //     {/* <BottomSheet /> */}
-    //     {/* <Box /> */}
-    //     {/* <PieChart /> */}
-    //     {/* <Wheel /> */}
-    //     {/* <Victory /> */}
-    //     {/* <CustomChart /> */}
-    //     <AnimatedHeader />
-    //   </GestureHandlerRootView>
-    // </SafeAreaView>
-    <SafeAreaProvider style={{flex: 1}}>
-      <AnimatedHeader />
-    </SafeAreaProvider>
+    <SafeAreaView style={backgroundStyle}>
+      <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
+      <GestureHandlerRootView style={{ flex: 1 }}>
+        {/* <BottomSheet /> */}
+        {/* <Box /> */}
+        {/* <PieChart /> */}
+        {/* <Wheel /> */}
+        {/* <Victory /> */}
+        {/* <CustomChart /> */}
+        <CalendarStrip />
+      </GestureHandlerRootView>
+    </SafeAreaView>
+    // <SafeAreaProvider style={{flex: 1}}>
+    //   <AnimatedHeader />
+    // </SafeAreaProvider>
     // <SafeAreaView style={backgroundStyle}>
     //   <Swipe />
     //   <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
