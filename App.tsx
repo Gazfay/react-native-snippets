@@ -26,6 +26,7 @@ import Victory from './src/components/VictoryNative';
 import Wheel from './src/components/CalendarStrip';
 import CustomChart from './src/components/CustomChart';
 import CalendarStrip from './src/components/CalendarStrip';
+import Slider from './src/components/Slider';
 
 const App = () => {
   const isDarkMode = useColorScheme() === 'dark';
@@ -45,7 +46,8 @@ const App = () => {
         {/* <Wheel /> */}
         {/* <Victory /> */}
         {/* <CustomChart /> */}
-        <CalendarStrip />
+        {/* <CalendarStrip /> */}
+        <Slider />
       </GestureHandlerRootView>
     </SafeAreaView>
     // <SafeAreaProvider style={{flex: 1}}>
